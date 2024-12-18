@@ -20,16 +20,18 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 Sarah Khan
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Computer Science graduate student specializing in Computational Perception and Robotics; 
+  documenting insights and explorations in autonomous systems, machine learning, and embedded
+  software development.  This space serves as a portfolio of my academic research, technical
+  projects, community involvement, and in-depth analyses of emerging technologies.
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               Exploring the Intersection of Robotics and Computer Science.
 
 # A list of keywords for your blog
 keywords:              []

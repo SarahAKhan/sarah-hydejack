@@ -12,6 +12,7 @@ gem "jekyll", "~> 4.3"
 
 gem "jekyll-theme-hydejack", git: "https://github.com/hydecorp/hydejack-pro", tag: "pro/v9.2.1"
 
+# Random Comment
 # If you are part of the ["Customers" team](https://github.com/orgs/hydecorp/teams/pro-customers), 
 # you can fetch the theme from a private repository. 
 # See [Deploy in the Hydejack Docs](https://hydejack.com/docs/deploy) for details.

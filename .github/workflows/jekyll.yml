@@ -38,6 +38,8 @@ jobs:
         with:
           ruby-version: '3.1'
           bundler-cache: true
+        env:
+          BUNDLE_GITHUB__COM: x-access-token:${{ secrets.GH_REPO_PAT }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

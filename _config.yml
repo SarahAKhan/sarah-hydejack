@@ -57,8 +57,8 @@ menu:
     url:               /projects/
   - title:             Résumé*
     url:               /resume/
-  - title:             Documentation
-    url:               /docs/
+  - title:             Academic Engagement
+    url:               /academics/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -96,7 +96,7 @@ theme: jekyll-theme-hydejack
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/FutureMasjidCeiling3.jpg
+accent_image:          /assets/img/CeilingImage.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,

@@ -1,11 +1,11 @@
 ---
 layout:      project
 title:       Project Title
-date:        YYYY-MM-DD
+date:        2024-06-01
 image:
   path:       /assets/img/projects/floater/floater_1920w.png
   srcset:
-    1920w:   /assets/img/projects/project-name.jpg
+    1920w:   /assets/img/projects/floater/floater_1920w.png
     960w:    /assets/img/projects/project-name@0,5x.jpg
     480w:    /assets/img/projects/project-name@0,25x.jpg
 caption:     A brief one-line description of your project.

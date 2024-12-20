@@ -3,11 +3,11 @@ layout:      project
 title:       Project Title
 date:        2024-06-01
 image:
-  path:       /assets/img/projects/floater/floater_1920w.png
+  path:       /assets/img/projects/floater/floater_3imgs_1920w.png
   srcset:
-    1920w:   /assets/img/projects/floater/floater_1920w.png
-    # 960w:    /assets/img/projects/project-name@0,5x.jpg
-    # 480w:    /assets/img/projects/project-name@0,25x.jpg
+    1920w:   /assets/img/projects/floater/floater_3imgs_1920w.png
+    960w:    /assets/img/projects/floater/floater_3imgs@0,5x.png
+    480w:    /assets/img/projects/floater/floater_3imgs@0,25x.png
 full_width: true
 caption:     A brief one-line description of your project.
 description: >

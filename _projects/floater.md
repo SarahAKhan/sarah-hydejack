@@ -9,11 +9,9 @@ image:
     960w:    /assets/img/projects/floater/floater_3imgs@0,5x.png
     480w:    /assets/img/projects/floater/floater_3imgs@0,25x.png
 full_width: true
-caption:     A brief one-line description of your project.
+caption:     Floatation device performing automated vertical profiles with temperature, depth, and pressure data collection and transmission.
 description: >
-  A longer description of your project that can span multiple lines.
-  You can use Markdown formatting here.
-  Keep this to about 3-4 sentences for best results.
+  This floatation device was our team's submission for the MATE Floats task of the 2024 MATE ROV Competition.  It performs fully automated vertical profiles consisting of sensor temperature, depth, and pressure data collection, and subsequent transmission upon profile completion.  The data received on deck is automatically written to a csv file and plotted in the float device's controls GUI.
 links:
   - title:   Live Demo
     url:     https://youtu.be/YV_wWue1qB8?si=MFaLaOyuOkbI08f6
@@ -22,6 +20,11 @@ featured:    false
 
 ## Overview
 Brief introduction to your project.
+
+![Image description](assets/img/projects/floater/floater_interior_300w_960h.png){:.lead width="300" height="960"}
+
+Floater hardware design.
+{:.figcaption}
 
 ## Features
 - Feature 1 with description

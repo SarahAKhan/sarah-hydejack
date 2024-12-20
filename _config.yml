@@ -26,7 +26,7 @@ title:                 Sarah Khan
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
   Computer Science graduate student specializing in Computational Perception and Robotics; 
-  documenting insights and explorations in autonomous systems, machine learning, and embedded
+  documenting explorations in autonomous systems, machine learning, and embedded
   software development.  This space serves as a portfolio of my academic research, technical
   projects, community involvement, and in-depth analyses of emerging technologies.
 
@@ -57,7 +57,7 @@ menu:
     url:               /projects/
   - title:             Résumé*
     url:               /resume/
-  - title:             Academic Engagement
+  - title:             Academics
     url:               /academics/
 
 # Add links to the footer.

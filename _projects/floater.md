@@ -51,7 +51,7 @@ Our team was one of the few teams in the competition to collect all of the Float
 - C++
 - Python
 
-![Image description](/assets/img/projects/floater/floater_stateMach_umlDiag_700w_533h.png){:.lead width="700" height="533"}
+![Image description](/assets/img/projects/floater/floater_stateMach_umlDiag_700w_533h.png){:.lead width="350" height="266.5"}
 
 Arduino Nano embedded State Machine.
 {:.figcaption}

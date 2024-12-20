@@ -21,7 +21,7 @@ featured:    false
 ## Overview
 Brief introduction to your project.
 
-![Image description](assets/img/projects/floater/floater_interior_300w_960h.png){:.lead width="300" height="960"}
+![Image description](/assets/img/projects/floater/floater_interior_300w_960h.png){:.lead width="300" height="960"}
 
 Floater hardware design.
 {:.figcaption}

@@ -63,4 +63,4 @@ Arduino Nano embedded State Machine.
 Floater GUI
 {:.figcaption}
 
-Our team name was "The Vikings" and our floater was named the "Thorpedo".  The pixelart graphic assets for the GUI were created using generative AI.  
+Our team name was "The Vikings"; the pixelart graphic assets for the GUI were created using generative AI.  

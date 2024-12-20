@@ -8,6 +8,7 @@ image:
     1920w:   /assets/img/projects/floater/floater_1920w.png
     # 960w:    /assets/img/projects/project-name@0,5x.jpg
     # 480w:    /assets/img/projects/project-name@0,25x.jpg
+full_width: true
 caption:     A brief one-line description of your project.
 description: >
   A longer description of your project that can span multiple lines.

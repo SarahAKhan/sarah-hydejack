@@ -26,6 +26,14 @@ During the 2024 MATE ROV Competition, we successfully completed the Floater Task
 Floater interior design.
 {:.figcaption}
 
+## Implementation Details
+The device emitted unique LED color patterns to convey internal state changes as it performed the vertical profile, as it loses Bluetooth connection once submerged in water.  The internal state machine consists of pumping water into the floater bladder on a timed interval, just until it begins to sink, then it automatically shuts off the pump and freefalls.  It registers when it has reached the bottom, sits there for an additional timed interval, and then begins pumping water out to return to the surface and automatically shuts the pump off when emptied.  Throught this profile, it is displaying different colors indicating these internal changes, as well as collecting temperature, depth, and pressure data.  
+
+It transmits all of the collected data via Bluetooth to the command station laptop, which then gets written to a csv file and plotted on the GUI automatically. 
+
+## Results
+Our team was one of the few teams in the competition to collect all of the Float Task points.  It is a category in the MATE ROV Competition that is notoriously difficult due to the 15' depth and the stringent requirements at the more difficult competition level. 
+
 ## Features
 - Automated vertical profile
 - Embedded State Machine
@@ -43,23 +51,14 @@ Floater interior design.
 - C++
 - Python
 
-
 ![Image description](/assets/img/projects/floater/floater_stateMach_umlDiag_700w_533h.png){:.lead width="700" height="533"}
 
 Arduino Nano embedded State Machine.
 {:.figcaption}
 
-## Implementation Details
-The device emitted unique LED color patterns to convey internal state changes as it performed the vertical profile, as it loses Bluetooth connection once submerged in water.  The internal state machine consists of pumping water into the floater bladder on a timed interval, just until it begins to sink, then it automatically shuts off the pump and freefalls.  It registers when it has reached the bottom, sits there for an additional timed interval, and then begins pumping water out to return to the surface and automatically shuts the pump off when emptied.  Throught this profile, it is displaying different colors indicating these internal changes, as well as collecting temperature, depth, and pressure data.  
-
-It transmits all of the collected data via Bluetooth to the command station laptop, which then gets written to a csv file and plotted on the GUI automatically. 
-
-![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.JPG){:.lead width="800" height="635"}
+![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.png){:.lead width="800" height="635"}
 
 Floater GUI
 {:.figcaption}
 
 Our team name was "The Vikings" and our floater was named the "Thorpedo".  The pixelart graphic assets for the GUI were created using generative AI.  
-
-## Results
-Our team was one of the few teams in the competition to collect all of the Float Task points.  It is a category in the MATE ROV Competition that is notoriously difficult due to the 15' depth and the stringent requirements at the more difficult competition level. 

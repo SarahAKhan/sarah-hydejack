@@ -1,6 +1,6 @@
 ---
 layout:      project
-title:       Project Title
+title:       Floater
 date:        2024-06-01
 image:
   path:       /assets/img/projects/floater/floater_3imgs_1920w.png
@@ -43,6 +43,7 @@ Floater interior design.
 - C++
 - Python
 
+
 ![Image description](/assets/img/projects/floater/floater_stateMach_umlDiag_700w_533h.png){:.lead width="700" height="533"}
 
 Arduino Nano embedded State Machine.
@@ -53,7 +54,7 @@ The device emitted unique LED color patterns to convey internal state changes as
 
 It transmits all of the collected data via Bluetooth to the command station laptop, which then gets written to a csv file and plotted on the GUI automatically. 
 
-![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.jpg){:.lead width="1136" height="901"}
+![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.JPG){:.lead width="1136" height="901"}
 
 Floater GUI
 {:.figcaption}

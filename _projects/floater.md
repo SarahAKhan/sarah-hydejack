@@ -21,6 +21,14 @@ featured:    false
 ## Floater
 During the 2024 MATE ROV Competition, we successfully completed the Floater Task with our device at 15' depth.  I was the lead software developer for the device (in addition to being the Software Team Lead) and wrote the embedded software in C++ based Arduino for the Arduino Nano microcontroller and the Python based controls on the command station laptop.  The laptop relayed commands to the device via Bluetooth; the floater would conduct its vertical profiles, while collecting temperature, depth, and pressure sensor data, and upon completion transmit all collected data to the command station via Bluetooth.  The data would automatically write to a csv file and plot in a mutli-y-axis graph on the GUI.  
 
+<div class="videoWrapper">
+  <iframe width="560" height="315" 
+    src="https://youtu.be/YV_wWue1qB8?si=MFaLaOyuOkbI08f6" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 ![Image description](/assets/img/projects/floater/floater_interior_700w_600h.png){:.lead width="700" height="600"}
 
 Floater interior design.

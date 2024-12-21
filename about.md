@@ -1,6 +1,6 @@
 ---
 layout: about
-image: /assets/img/ProfilePicture_Square_128hw.jpg
+image: /assets/img/ProfilePicture_Square_256hw.png
 description: >
   A boutique Jekyll theme for hackers, nerds, and academics,
   with a focus on personal sites that are meant to impress.

@@ -23,7 +23,7 @@ During the 2024 MATE ROV Competition, we successfully completed the Floater Task
 
 <div class="videoWrapper">
   <iframe width="560" height="315" 
-    src="https://youtu.be/YV_wWue1qB8?si=MFaLaOyuOkbI08f6" 
+    src="https://www.youtube.com/embed/YV_wWue1qB8?si=MFaLaOyuOkbI08f6" 
     frameborder="0" 
     allowfullscreen>
   </iframe>

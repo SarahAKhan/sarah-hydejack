@@ -13,155 +13,39 @@ redirect_from:
 
 <!--author-->
 
-## Hydejack
+## Academic Background
+I completed my Bachelor's degree in Comparative Literature from UCLA in 2007.  After working professionally, I returned to academia at the beginning of 2022 to pursue Computer Science with an emphasis in Robotics.  
 
-A boutique Jekyll theme for hackers, nerds, and academics.  
-{:.lead}
+Thus far I have been involved in a number or pursuits geared towards my core aspiration: to create robots that assist users in the home by taking on domestic labor and assistive tasks.  I have studied Python and C++ focusing on embedded systems.  Currently I am in the early stages of learning TinyML and quantum development on Qiskit (in addition to my graduate curriculum) hoping to integrate both with robotics. At Georgia Tech I have completed coursework and projects in Computer Vision, Human Robot Interaction, and Data-Centric Machine Learning.  I studied Japanese up to a basic level of functional competancy for my undergraduate degree in Comparative Literature, and it is my hope that I can apply it in the robotics industry.
 
-1. this list will be replaced by the toc
-{:toc .large-only}
-
-![Screenshot](/assets/img/blog/hydejack-9.jpg){:.lead width="1920" height="1080" loading="lazy"}
-
-Hydejack's cover page on a variety of screen sizes.
-{:.figcaption}
+## Professional Background
+I worked in garment design for about 10 years and prior to that as a technical editor for supply chain quality control in the pharmaceutical and medical device fields.  My reason for switching to Computer Science is a combination of life circumstances, but at the heart of it all is the desire to create with intellectual challenge.  My extensive work experience brings an organized and efficient approach to project management, experienced team cultivation and leadership, and constructive communication skills.  The fashion industry demands excellance combined with extreme turnaround timelines, and so I leverage the strategies and grit that I cultivated in my academic work.  
 
 
-**Hydejack** is a boutique [Jekyll] theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress. 
+## Academic Initiatives
 
-It includes a blog that is suitable for both prose and technical documentation, a portfolio to showcase your projects, and a resume template that looks amazing on the web and in print.
+### Code In Place
+Since Spring 2024, I have been involved in Foothill College's integration of Stanford's online beginning CS learning platform and course into Foothill's CS curriculum as CS49.  I have been an ongoing Section Lead for CS49 and have developed Section Lead instructional aid materials.  In Fall 2024 I presented on the Code in Place integration at the INSPIRE 2024 Conference with the Stanford Digital Education and Foothill Computer Science departments.
 
-> Your complete presence on the web — A [blog], [portfolio], and [resume].
-{:.lead}
+My continued involvement at Foothill and with Code in Place is due to the immense support I received from the Computer Science faculty at Foothill.  I can firmly say that I would not have been able to overcome the steep initial learning curve I experienced learning programming without this support.  Some of this faculty has continued to support me through my academic growth as mentors, helping guide and mold my goals.  As a Section Lead, I hope to provide the same to incoming Computer Science majors. 
 
-
-## A Personal Site That Won't Disappear
-
-**Hydejack** is 100% built on Open Source software, and is Open Source itself, save for parts of the PRO version. The PRO version is a one-time payment that gives you the right to use it forever.
-
-Hydejack is all static sites. _HTML_. All you need is a web server — any web server — to have a professional web presence that lasts a lifetime.
+### Research 
+At Georgia Tech, I volunteer at LIDAR (Laboratory for Intelligent Decision and Autonomous Robots) on a team supporting Reinforcement Learning research on the Digit humanoid robot; my sub-division's task is integrating TorchRL into the IsaacLab training environment.
 
 
-## A Free Blogging Theme
-**Hydejack** started out as a free blogging theme for Jekyll — and continues to be so.
+## Extracurricular Involvement
 
-<!--posts-->
-
-
-## An Impressive Portfolio
-A portfolio that's guaranteed to be impressive — no matter what you put into it.
-
-<!--projects-->
+### Competitive Underwater Robotics
+From 2023 to 2024 I was involved in a local robotics team in an effort to get experience designing and deploying an embedded system.  The team competed in the 2024 MATE ROV Competition.  I was the Lead Software Designer on the team, managing the software team's workload and task assignment.  Additional implementation details for the primary device that I worked on can be seen on the [floater] page.
 
 
-## A Printable Resume
-Get a resume that's consistent across the board — whether it's on the web, mobile, print, or [PDF](/assets/Resume.pdf).
+## Community Involvement
 
-[![Resume PDF](/assets/img/blog/resume.png){:.lead width="884" height="632" loading="lazy"}][resume]{:.no-hover.no-mark}
+### Study Quest // Mentoring
+Many people have asked me how I managed to go from a literary academic background and a professional design background into Computer Science.  The reality behind this shift is fairly unglamorous as I simply combined the extreme efficiency ethos that I honed in the fashion industry with very focused, outcome oriented hard work.  I was faced with revisiting STEM topics, such as mathematics, after 15 years and so I enrolled in an online learning program to relearn how to learn.  Study Quest is a learning course with a community geared towards teaching students how to learn efficiently, effectively and with depth.  Because of this course and my implementation of its curriculum, I was able to exceed my previous undergraduate performance, while simultaneously juggling more extracurricular activities.  Once I completed the course and saw the results, I continued to participate in its online community as a mentor to support other students in achieving their academic goals, as a way to give back.
 
-Front and center page of a print resume generated by Hydejack.
-{:.figcaption}
-
-
-## Just Markdown
-Write all content with Markdown. __Hydejack__ gives you [additional CSS classes](docs/writing.md) to stylize your content, without losing compatibility with other Jekyll themes.
+### Civil Rights // Caste Equality
+I've done a bit of work with and through Equality Labs, a civil rights group advocating for Dalit and caste equality.  I volunteered as a Book Ambassador for Thenmozhi Soundarajan's book release, "The Trauma of Caste".  I also supported standup comedian Manjeet Sarkar's tour with marketing and promotional graphics.  The tour entitled "Untouchables", leveraged the expanding standup comedy platform in India to raise awareness on caste, gender, and marginalized community discrimination.  
 
 
-## Just Markup
-**Hydejack** boasts a plethora of modern JavaScript, but make no mistake: It's still a _plain old web page_ at its core. It works without JavaScript and you can even view it in a text-based browser like `w3m`:
-
-![w3m Screenshot](/assets/img/blog/w3m.png){:.tail width="1920" height="1260" loading="lazy"}
-
-The Hydejack blog, as seen by the text browser `w3m`.
-{:.figcaption}
-
-
-## Syntax Highlighting
-**Hydejack** features syntax highlighting, powered by [Rouge].
-
-```html
-<!-- file: `_includes/my-body.html` -->
-<script type="module">
-  document.querySelector("hy-push-state").addEventListener("hy-push-state-load", () => {
-    const supportsCodeHighlights = false; // TBD!!
-  });
-</script>
-```
-
-Code blocks can have a filename and a caption.
-{:.figcaption}
-
-
-## Beautiful Math
-They say math is beautiful — and with **Hydejack**'s [math support][math] it's guaranteed to also look beautiful:
-
-$$
-\begin{aligned}
-  \phi(x,y) &= \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) \\[2em]
-            &= \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j)            \\[2em]
-            &= (x_1, \ldots, x_n)
-               \left(\begin{array}{ccc}
-                 \phi(e_1, e_1)  & \cdots & \phi(e_1, e_n) \\
-                 \vdots          & \ddots & \vdots         \\
-                 \phi(e_n, e_1)  & \cdots & \phi(e_n, e_n)
-               \end{array}\right)
-               \left(\begin{array}{c}
-                 y_1    \\
-                 \vdots \\
-                 y_n
-               \end{array}\right)
-\end{aligned}
-$$
-
-Hydejack uses KaTeX to efficiently render math.
-{:.figcaption}
-
-
-## Features
-
-{% include features.md %}
-
-
-## Download
-
-{% include table.md %}
-
-
-## Get It Now
-
-Use the the form below to purchase Hydejack PRO:
-
-<div class="gumroad-product-embed" data-gumroad-product-id="nuOluY"><a href="https://gumroad.com/l/nuOluY">Loading…</a></div>
-
-[jekyll]: https://jekyllrb.com
-
-[blog]: /
-[portfolio]: https://hydejack.com/examples/
-[resume]: https://hydejack.com/resume/
-[download]: https://hydejack.com/download/
-[welcome]: https://hydejack.com/
-[forms]: https://hydejack.com/forms-by-example/
-
-[features]: #features
-[news]: #build-an-audience
-[syntax]: #syntax-highlighting
-[latex]: #beautiful-math
-[dark]: https://hydejack.com/blog/hydejack/2018-09-01-introducing-dark-mode/
-[search]: https://hydejack.com/#_search-input
-[grid]: https://hydejack.com/blog/hydejack/
-
-[lic]: LICENSE.md
-[pro]: licenses/PRO.md
-[docs]: docs/README.md
-[ofln]: docs/advanced.md#enabling-offline-support
-[math]: docs/writing.md#adding-math
-
-[kit]: https://github.com/hydecorp/hydejack-starter-kit/releases
-[src]: https://github.com/hydecorp/hydejack
-[gem]: https://rubygems.org/gems/jekyll-theme-hydejack
-[buy]: https://gum.co/nuOluY
-
-[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fhydejack.com%2Fdocs%2F
-[rouge]: http://rouge.jneen.net
-[katex]: https://khan.github.io/KaTeX/
-[mathjax]: https://www.mathjax.org/
+[floater]: https://sarahkhan.io/projects/floater/

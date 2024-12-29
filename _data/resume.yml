@@ -6,7 +6,7 @@ basics:
   label: "Computer Science Masters Student"
   picture: "/assets/img/ProfilePicture_Square_256hw.png"
   email: "contactme@sarahkhan.io"
-  phone: "(562) 852-3430"
+  phone: "(562) 257-6556"
   website: "https://sarahkhan.io"
   summary: >
     Richard hails from Tulsa.
@@ -26,11 +26,20 @@ basics:
     region: "Georgia"
   profiles:
     - network: "Twitter"
-      username: "RHendricksCEO"
-      url: ""
+      username: "khansarah72"
+      url: "https://x.com/khansarah72"
     - network: "LinkedIn"
-      username: "Richard Hendricks"
-      url: ""
+      username: "Sarah Khan"
+      url: "https://www.linkedin.com/in/sarah-a-khan/"
+projects:
+  - name: "Knowledge Distillation for TinyML/Embedded AI: Model 
+  Distillation with Time Series Data"
+    description: "A mapping app that doesn't want you to get lost."
+    highlights:
+      - "Won award at AIHacks 2016"
+    keywords:
+      - "Swift"
+      - "MapKit"
 work:
   - company: "Pied Piper"
     position: "CEO/President"

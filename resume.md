@@ -6,10 +6,10 @@ description: >
 hide_description: true 
 left_column:
     - basics
-    - work
-    - projects
-    - volunteer
     - education
+    - projects
+    - work
+    - volunteer
 right_column:
     - languages
     - skills

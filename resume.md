@@ -6,8 +6,8 @@ description: >
 hide_description: true 
 left_column:
     - basics
-    - projects
     - work
+    - projects
     - volunteer
     - education
 right_column:

@@ -8,7 +8,7 @@ basics:
   email: "contactme@sarahkhan.io"
   phone: "(562) 257-6556"
   website: "https://sarahkhan.io"
-  career_highlights: >
+  summary: >
     
     Richard hails from Tulsa.
     He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
@@ -34,12 +34,14 @@ basics:
       url: "https://www.linkedin.com/in/sarah-a-khan/"
 projects:
   - name: "Knowledge Distillation for TinyML/Embedded AI: Model Distillation with Time Series Data"
-    description: "A mapping app that doesn't want you to get lost."
-    highlights:
-      - "Won award at AIHacks 2016"
-    keywords:
-      - "Swift"
-      - "MapKit"
+    startDate: "2024-08-14"
+    endDate: "2024-12-14"
+    description: >
+      This project aims to develop a knowledge distillation framework for TinyML applications
+      that use time series data. The goal is to reduce the size of the model while maintaining
+      high accuracy and performance. The project will involve training a large model on a
+      time series dataset and then distilling the knowledge into a smaller model that can be
+      deployed on resource-constrained devices.
 work:
   - company: "Pied Piper"
     position: "CEO/President"

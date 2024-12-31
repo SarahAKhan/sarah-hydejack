@@ -33,15 +33,19 @@ basics:
       username: "Sarah Khan"
       url: "https://www.linkedin.com/in/sarah-a-khan/"
 projects:
-  - title: "Bw-Tree Performance Boosting"
-    startDate: "2018-08-01"
-    endDate: "2019-10-31"
-    summary: "Evaluating cache / multi thread Performance of <a href='https://github.com/wangziqi2013/BwTree'>Open Bw-Tree</a> to find bottleneck and improvement performance."
-    url: "https://lazyren.github.io/tag-bwtree/"
+  - title: "Knowledge Distillation for TinyML/Embedded AI: 
+  Model Distillation with Time Series Data"
+    startDate: "2024-08-19"
+    endDate: "2024-12-24"
+    summary: "Knowledge distillation framework using Wav2Vec2 teacher model for 
+    Speech Emotion Recognition classification task to train student models under 100k parameters."
     highlights:
-      - "Implementing update function based on the <a href='https://hyeontaek.com/papers/openbwtree-sigmod2018.pdf'>page</a>."
-      - "Make update function atomic & reduce call of traverse function."
-      - "Design TaS implemented Bw-Tree instead of CaS to reduce the overhead of failed CaS operations."
+      - "Distilled Wav2Vec2-base (95M parameters) to Wav2Small (72K parameters) 
+      resulting in a reduced model 0.078% of teacher with 80-90+% accuracy."
+      - "Speech Emotion Recognition (SER) on Wav2Small for on-device deployment 
+      using TESS dataset."
+      - " Knowledge Distillation pipeline implementation using output softening 
+      with combined Cross Entropy Loss and KL Divergence between teacher and student models."
 work:
   - company: "Pied Piper"
     position: "CEO/President"

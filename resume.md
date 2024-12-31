@@ -9,7 +9,7 @@ left_column:
     - education
     - projects
     - awards
-    - research
+    - publications
     - work
     - volunteer
 right_column:

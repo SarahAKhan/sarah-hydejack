@@ -8,9 +8,9 @@ left_column:
     - basics
     - education
     - projects
+    - volunteer
     - work
 right_column:
-    - volunteer
     - awards
     - languages
     - skills

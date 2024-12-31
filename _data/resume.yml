@@ -61,6 +61,8 @@ projects:
       with automated graphing of sensor data."
       - "Led software team in overall competition objectives’ software planning and execution, 
       including team coordination, skills development, and successful deployment."
+research:
+  - 
 work:
   - company: "Pied Piper"
     position: "CEO/President"
@@ -95,11 +97,12 @@ education:
       - "DB1101 - Basic SQL"
       - "CS2011 - Java Introduction"
 awards:
-  - title: "Digital Compression Pioneer Award"
-    date: "2014-11-01"
-    awarder: "Techcrunch"
-    summary: "There is no spoon."
-publications:
+  - title: "Hanyang Academic Achievement Award"
+    awarder: "Hanyang Univ."
+    highlights:
+      - "2018, 2nd semester"
+      - "2017, 2nd semester(Highest Honor)"
+research:
   - name: "Video compression for 3d media"
     publisher: "Hooli"
     releaseDate: "2014-10-01"

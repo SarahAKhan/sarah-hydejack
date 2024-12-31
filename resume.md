@@ -8,6 +8,8 @@ left_column:
     - basics
     - education
     - projects
+    - awards
+    - research
     - work
     - volunteer
 right_column:

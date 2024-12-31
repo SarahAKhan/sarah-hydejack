@@ -95,14 +95,14 @@ volunteer:
     highlights:
       - "Academic peer mentorship on developing efficient and effective study methodologies with emphasis in STEM."
       - "Weekly hosting of digital community focus building; sessions function as deep learning study groups."
-  - organization: "Manjeet Sarkar"
-    position: "Promotional Graphic Artist"
-    startDate: "2023-09-01"
-    endDate: "2023-11-01"
-    summary: "Developed promotional graphics for Manjeet Sarkar's standup comedy tour, "Untouchables"."
-    highlights:
-      - "Materials contributed to anti-caste, gender, and marginalized 
-      community discrimination performance on a public platform."
+  # - organization: "Manjeet Sarkar"
+  #   position: "Promotional Graphic Artist"
+  #   startDate: "2023-09-01"
+  #   endDate: "2023-11-01"
+  #   summary: "Developed promotional graphics for Manjeet Sarkar's standup comedy tour, "Untouchables"."
+  #   highlights:
+  #     - "Materials contributed to anti-caste, gender, and marginalized 
+  #     community discrimination performance on a public platform."
 
 work:
   - company: "Study Quest"

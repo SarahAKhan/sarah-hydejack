@@ -9,11 +9,11 @@ left_column:
     - education
     - projects
     - awards
-    - publications
-    - work
     - volunteer
+    - work
 right_column:
     - languages
     - skills
     - interests
+no_skill_icons: true
 ---

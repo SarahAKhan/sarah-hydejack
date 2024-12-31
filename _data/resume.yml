@@ -61,76 +61,127 @@ projects:
       with automated graphing of sensor data."
       - "Led software team in overall competition objectives’ software planning and execution, 
       including team coordination, skills development, and successful deployment."
-research:
-  - 
-work:
-  - company: "Pied Piper"
-    position: "CEO/President"
-    website: "https://piedpiper.com"
-    startDate: "2013-12-01"
-    endDate: ""
-    summary: >
-      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-      consistently fielded high Weisman Scores™ that are not merely competitive,
-      but approach the theoretical limit of lossless compression.
-    highlights:
-      - "Built an algorithm for artist to detect if their music was violating copy right infringement laws"
-      - "Successfully won Techcrunch Disrupt"
-      - "Optimized an algorithm that holds the current world record for Weisman Scores"
+
 volunteer:
-  - organization: "CoderDojo"
-    position: "Teacher"
-    website: "https://coderdojo.com/"
+  - organization: "LIDAR: Laboratory for Intelligent Decision and Autonomous Robots"
+    position: "Volunteer Assistant"
     startDate: "2012-01-01"
-    endDate: "2013-01-01"
-    summary: "Global movement of free coding clubs for young people."
+    endDate: ""
+    summary: "Deploying trained agents on Digit humanoid robot."
     highlights:
-      - "Awarded 'Teacher of the Month'"
+      - "Support efforts for TorchRL integration into IsaacLabs environment."
+
+work:
+  - company: "Study Quest"
+    position: "Product Manager"
+    startDate: "2024-01-06"
+    endDate: "2024-08-19"
+    summary: >
+      Developed e-commerce store using Fourthwall e-commerce platform and merchandise for Study Quest, an educational startup. 
+    highlights:
+      - "Total life-cycle merchandise product management resulting in successful generation of new revenue stream."
+      - "Complete merchandise product line ideation to launch, including product design and sourcing."
+      - "Managed Study Quest Office Hours providing student mentoring and study skills development."
+  - company: "Avalon Apparel"
+    position: "CAD Artist"
+    startDate: "2021-09-10"
+    endDate: "2022-10-31"
+    summary: >
+      Technical CAD creation and 3D CAD modeling for apparel. 
+    highlights:
+      - "Utilized industry standard 3D modeling software to produce technically accurate 3D CAD renders."
+      - "CAD team workload organization, distribution and execution against highly sensitive deadlines."
+      - "Led a reduced CAD team during COVID-19 to successful completion of critical project under a tight deadline."
+
 education:
-  - institution: "University of Oklahoma"
-    area: "Information Technology"
-    studyType: "Bachelor"
-    startDate: "2011-06-01"
-    endDate: "2014-01-01"
-    gpa: "4.0"
+  - institution: "Georgia Institute of Technology"
+    area: "Computer Science"
+    studyType: "Masters"
+    startDate: "2024-08-19"
+    endDate: ""
     courses:
-      - "DB1101 - Basic SQL"
-      - "CS2011 - Java Introduction"
+      - "CS8803 - Datacentric Machine Learning"
+      - "CS7633 - Human Robot Interaction"
+      - "CS6476 - Computer Vision"
+  - institution: "University of California, Los Angeles"
+    area: "Comparative Literature"
+    studyType: "Bachelor"
 awards:
-  - title: "Hanyang Academic Achievement Award"
-    awarder: "Hanyang Univ."
-    highlights:
-      - "2018, 2nd semester"
-      - "2017, 2nd semester(Highest Honor)"
-publications:
-  - name: "Video compression for 3d media"
-    publisher: "Hooli"
-    releaseDate: "2014-10-01"
-    website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
-    summary: "Innovative middle-out compression algorithm that changes the way we store data."
+  - title: "STEM Division Achievement Award"
+    awarder: "Foothill College"
+# publications:
+#   - name: "Video compression for 3d media"
+#     publisher: "Hooli"
+#     releaseDate: "2014-10-01"
+#     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
+#     summary: "Innovative middle-out compression algorithm that changes the way we store data."
 skills:
-  - name: "Web Development"
-    level: "Master"
+  - name: "Programming Languages"
+    # level: "Master"
     keywords:
-      - "HTML"
-      - "CSS"
-      - "Javascript"
-  - name: "Compression"
-    level: "Master"
+      - "Python"
+      - "C++"
+      - "Java"
+  - name: "Developer Tools"
+    # level: "Master"
     keywords:
-      - "Mpeg"
-      - "MP4"
-      - "GIF"
+      - "PyCharm"
+      - "Eclipse"
+      - "Visual Studio Code"
+      - "Arduino IDE"
+  - name: "Libraries & Frameworks"
+    # level: "Master"
+    keywords:
+      - "PyTorch"
+      - "Tkinter"
+      - "NumPy"
+      - "Matplotlib"
+      - "PyQt5"
+      - "Vector SDK"
+  - name: "Hardware"
+    # level: "Master"
+    keywords:
+      - "Raspberry Pi"
+      - "Arduino"
+  - name: "Software"
+    # level: "Master"
+    keywords:
+      - "AutoCAD"
+      - "Adobe Illustrator"
+      - "Adobe Photoshop"
 languages:
   - language: "English"
     fluency: "Native speaker"
+  - language: "Urdu"
+    fluency: "Native speaker"
+  - language: "Japanese"
+    fluency: "Elementary proficiency"
 interests:
-  - name: "Wildlife"
+  - name: "Dance"
     keywords:
-      - "Ferrets"
-      - "Unicorns"
-references:
-  - name: "Erlich Bachman"
-    reference: >
-      It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
-      Company proved that he will be a valuable addition to any company.
+      - "Kathak (Classical Indian Dance)"
+      - "Hip Hop"
+  - name: "Music"
+    keywords:
+      - "Singing"
+  - name: "Literature"
+    keywords:
+      - "Medieval Islamic Literature"
+      - "Diasporic Literature"
+      - "Dune Series"
+  - name: "Anime & Manga"
+    keywords:
+      - "DanDaDan"
+      - "Devilman Crybaby"
+      - "Mob Psycho 100"
+      - "Jujutsu Kaisen"
+  - name: "Horror"
+    keywords:
+      - "Gothic/Victorian Literature"
+      - "Horror Films"
+      - "International Horror Films"
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.

@@ -9,16 +9,9 @@ basics:
   phone: "(562) 257-6556"
   website: "https://sarahkhan.io"
   summary: >
-    
-    Richard hails from Tulsa.
-    He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
-    Before starting Pied Piper, he worked for Hooli as a part time software developer.
-    While his work focuses on applied information theory,
-    mostly optimizing lossless compression schema of both the length-limited and adaptive variants,
-    his non-work interests range widely,
-    everything from quantum computing to chaos theory.
-    He could tell you about it, but THAT would NOT be a “length-limited” conversation!
-    Open `_data/resume.yml` to edit this text.
+    - "Computer Science Masters Student specializing in Computational Perception and Robotics."
+    - "Interested in Robotics applications in domestic environments and assistive technologies."
+    - "Exploring TinyML applications in Robotics and Embedded AI."
   location:
     address: "Vinings"
     postalCode: "GA 30339"
@@ -36,7 +29,7 @@ projects:
   - title: "Knowledge Distillation for TinyML/Embedded AI: 
   Model Distillation with Time Series Data"
     startDate: "2024-08-19"
-    endDate: "2024-12-24"
+    endDate: "2024-12-12"
     summary: "Knowledge distillation framework using Wav2Vec2 teacher model for 
     Speech Emotion Recognition classification task to train student models under 100k parameters."
     highlights:
@@ -46,6 +39,28 @@ projects:
       using TESS dataset."
       - " Knowledge Distillation pipeline implementation using output softening 
       with combined Cross Entropy Loss and KL Divergence between teacher and student models."
+  - title: "UDA for Personalized Action Recognition in Body Gesture Control for Mobile Robotics"
+    startDate: "2024-08-19"
+    endDate: "2024-12-12"
+    summary: "Unsupervised Domain Adaptation (UDA) for personalized gesture recognition 
+    for mobile robotics."
+    highlights:
+      - "Human pose estimation using ML model MMPose (RTMO) integrated with Anki Vector Robot."
+      - "Automated data generation of robot-centric (Vector) perspective data for Unsupervised Domain Adaptation."
+      - "Implemented custom Vector responses to recognized gestures using Vector SDK."
+  - title: " ROV Team Lead Software Developer"
+    startDate: "2023-08-17"
+    endDate: "2024-06-22"
+    summary: "Lead software developer for the Viking ROV team competing at the MATE ROV Competition 2024."
+    highlights:
+      - "Developed embedded C++ software for an underwater automated device 
+      that collected pressure, temperature, and depth data in vertical profiles 
+      using a Bluetooth communication system."
+      - " Designed and programmed device’s GUI application in Python using PyQt5 
+      that remotely controlled the underwater device and displayed real-time data 
+      with automated graphing of sensor data."
+      - "Led software team in overall competition objectives’ software planning and execution, 
+      including team coordination, skills development, and successful deployment."
 work:
   - company: "Pied Piper"
     position: "CEO/President"

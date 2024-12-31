@@ -70,6 +70,39 @@ volunteer:
     summary: "Deploying trained agents on Digit humanoid robot."
     highlights:
       - "Support efforts for TorchRL integration into IsaacLabs environment."
+  - organization: "Foothill College"
+    position: "CS49/Code In Place Section Leader"
+    startDate: "2024-02-01"
+    endDate: ""
+    summary: "Supporting Foothill College's integration of Stanford's Code In Place into CS49."
+    highlights:
+      - "Conduct weekly section meetings with CS49 students reinforcing learning 
+      objectives through programming challenges."
+      - "Support, guide and mentor students at the beginning of their Computer Science academic career."
+  - organization: "Foothill College"
+    position: "Math 10 - Statistics Tutor"
+    startDate: "2023-04-01"
+    endDate: "2023-06-01"
+    summary: "Supporting peers in statistics course wiith weekly tutoring sessions and study skills development."
+    highlights:
+      - "Bi-weekly remote peer-to-peer tutoring focused on Math 10 course curriculum and weekly training course."
+      - "Tutee began tutoring with a high D grade and completed with a final grade of B+, securing timely graduation."
+  - organization: "Study Quest"
+    position: "Mentor"
+    startDate: "2023-08-01"
+    endDate: ""
+    summary: "Supporting Study Quest students with study skills development and technique implementation."
+    highlights:
+      - "Academic peer mentorship on developing efficient and effective study methodologies with emphasis in STEM."
+      - "Weekly hosting of digital community focus building; sessions function as deep learning study groups."
+  - organization: "Manjeet Sarkar"
+    position: "Promotional Graphic Artist"
+    startDate: "2023-09-01"
+    endDate: "2023-11-01"
+    summary: "Developed promotional graphics for Manjeet Sarkar's standup comedy tour, "Untouchables"."
+    highlights:
+      - "Materials contributed to anti-caste, gender, and marginalized 
+      community discrimination performance on a public platform."
 
 work:
   - company: "Study Quest"

@@ -36,17 +36,26 @@ Wav2Vec2 Teacher Model training results and hyperparameters
 {:.figcaption}
 
 ### Student Model 1: Wav2Small[2]
-A key refrerence for our project was the research done by the [audEERING](https://www.audeering.com/) group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
+A key reference for our project was the research done by the [audEERING](https://www.audeering.com/) group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
 
-![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_graphic_1920w2000h.png){:.lead width="700" height="600"}
+![Student model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2Small_graphic_1920w2000h.png){:.lead width="700" height="600"}
 
-Wav2Vec2 Teacher Model training results and hyperparameters
+Wav2Small Student Model architecture and hyperparameters
 {:.figcaption}
 
 ### Student Model 2: Wav2Tiny
+Leveraging the insights provided in [2] on the advantages of the vgg7 approach to audio feature extraction combined with the simplified classification task, we further experimented with our own variation of a reduced model size, which we dubbed Wav2Tiny. This second student model resulted in around 15K parameters.
+
+![Wav2Tiny Student Model architecture](/assets/img/academics/knowledgeDistill/StudentModel_wav2tiny_graphic_1440w1500h.png){:.lead width="700" height="600"}
+
+Wav2Tiny Student Model architecture
+{:.figcaption}
 
 ### Dataset: TESS
 The TESS dataset was used to finetune the Wav2Vec2 teacher model for the SER classfication task.  It consists of seven emotion classifications: anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral and with 2800 total datapoints, was split with 2240 samples for training and 560 samples for testing.  The samples themselves are high quality audio recordings in a .wav format. 
+
+### Core Works Referenced
+Since this was an introductory TinyML project, we sourced informative learning references for foundational theory, as well as broad ranging TinyML papers surveying applications[5] in order to gain a better understanding of the core principles and current status of the topics.  Hinton, et al's seminal work on knowledge distillation, "Distilling the Knowledge in a Neural Network"(2015) [[4]](http://arxiv.org/abs/1503.02531) is often cited as a core methodology establishing piece, demonstrating the effectiveness of the teacher/student learning paradigm.  As mentioned in other sections [2] also served as a main reference for our student models and their architecture design for lightweight handling of time series data.
 
 ## Methodology
 - Automated vertical profile
@@ -65,11 +74,6 @@ The TESS dataset was used to finetune the Wav2Vec2 teacher model for the SER cla
 - C++
 - Python
 
-## Project Presentation
-![Image description](/assets/img/projects/floater/floater_stateMach_umlDiag_700w_533h.png){:.lead width="700" height="533"}
-
-Arduino Nano embedded State Machine.
-{:.figcaption}
 
 ## Project Report
 ![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.png){:.lead width="800" height="635"}
@@ -83,3 +87,9 @@ Our team name was "The Vikings"; the pixelart graphic assets for the GUI were cr
 1. A. Baevski, H. Zhou, A. Mohamed, and M. Auli, "wav2vec 2.0: A framework for self supervised learning of speech representations," in Proceedings of the 34th Conference on Neural Information Processing Systems (NeurIPS 2020), Vancouver, Canada, 2020. [1](https://arxiv.org/abs/2006.11477)
 
 2. D. Kounades-Bastian, O. Schrüfer, A. Derington, H. Wierstorf, F. Eyben, F. Burkhardt, and B. W. Schuller, "WAV2SMALL: Distilling Wav2Vec2 to 72K Parameters for Low-Resource Speech Emotion Recognition," arXiv preprint arXiv:2408.13920, 2024. [2](https://arxiv.org/abs/2408.13920)
+
+3. Datafuse Analytics, "KNOWLEDGE DISTILLATION ultimate GUIDE," YouTube, 2023.[3](https://youtu.be/708ku_bNJGw?si=Gws8MiAZlB_tYYcW)
+
+4. Hinton, G., Vinyals, O., & Dean, J., "Distilling the Knowledge in a Neural Network," arXiv preprint arXiv:1503.02531, 2015. [4](http://arxiv.org/abs/1503.02531)
+
+5. Gou, J., Yu, B., Maybank, S. J., & Tao, D., "Knowledge Distillation: A Survey," arXiv preprint arXiv:2006.05525, 2021.[5](http://arxiv.org/abs/2006.05525)

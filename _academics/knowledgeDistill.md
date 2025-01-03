@@ -6,8 +6,8 @@ image:
   path:       /assets/img/academics/knowledgeDistill/KD_pipeline_1920w.png
   srcset:
     1920w:   /assets/img/academics/knowledgeDistill/KD_pipeline_1920w.png
-    960w:    /assets/img/projects/floater/floater_3imgs@0,5x.png
-    480w:    /assets/img/projects/floater/floater_3imgs@0,25x.png
+    960w:    /assets/img/academics/knowledgeDistill/KD_pipeline_960w.png
+    480w:    /assets/img/academics/knowledgeDistill/KD_pipeline_480w.png
 full_width: true
 caption:     Floatation device performing automated vertical profiles with temperature, depth, and pressure data collection and transmission.
 description: >

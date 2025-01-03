@@ -9,66 +9,57 @@ image:
     960w:    /assets/img/academics/knowledgeDistill/KD_pipeline_960w.png
     480w:    /assets/img/academics/knowledgeDistill/KD_pipeline_480w.png
 full_width: true
-caption:     Floatation device performing automated vertical profiles with temperature, depth, and pressure data collection and transmission.
+caption:     Model distillation research project using Wav2Vec2-base and time series data.
 description: >
-  This floatation device was our team's submission for the MATE Floats task of the 2024 MATE ROV Competition.  It performs fully automated vertical profiles consisting of sensor temperature, depth, and pressure data collection, and subsequent transmission upon profile completion.  The data received on deck is automatically written to a csv file and plotted in the float device's controls GUI.
-links:
-  - title:   Live Demo
-    url:     https://youtu.be/YV_wWue1qB8?si=MFaLaOyuOkbI08f6
-featured:    false
+  We sought to analyze the impact of time series data in the model distillation pipeline.  Using Wav2Vec2-base as the teacher model (95M parameters) and the TESS dataset, we distilled learning to two student models, Wav2Small (90K parameters) and our Wav2Tiny (15K parameters).
+featured:    true
 ---
 
-## Floater
-During the 2024 MATE ROV Competition, we successfully completed the Floater Task with our device at 15' depth.  I was the lead software developer for the device (in addition to being the Software Team Lead) and wrote the embedded software in C++ based Arduino for the Arduino Nano microcontroller and the Python based controls on the command station laptop.  The laptop relayed commands to the device via Bluetooth; the floater would conduct its vertical profiles, while collecting temperature, depth, and pressure sensor data, and upon completion transmit all collected data to the command station via Bluetooth.  The data would automatically write to a csv file and plot in a mutli-y-axis graph on the GUI.  
+## Knowledge Distillation for TinyML/Embedded AI: Model Distillation with Time Series Data
+TinyML is an emerging field for on device machine learning.  Using knowledge distillation from a Wav2Vec2-base teacher model and two student models of varied reduced sizes, we focused on the impact of time series data in the distillation pipeline.  We finetuned Wav2Vec2-base (95M parameters) using the Speech Emotion Recognition (SER) dataset TESS to a 98.3% accuracy.  Knowledge from this teacher model was distilled to Wav2Small (90K parameters) at a 94.8% accuracy and our Wav2Tiny (15K parameters) at a 86.3% accuracy.  
 
-<div class="videoWrapper">
-  <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/YV_wWue1qB8?si=MFaLaOyuOkbI08f6" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
+![Image description](/assets/img/academics/knowledgeDistill/modelsTable_results.png){:.lead width="700" height="600"}
 
-![Image description](/assets/img/projects/floater/floater_interior_700w_600h.png){:.lead width="700" height="600"}
-
-Floater interior design.
+SER Models
 {:.figcaption}
 
-## Implementation Details
+## Research Problem
 The device emitted unique LED color patterns to convey internal state changes as it performed the vertical profile, as it loses Bluetooth connection once submerged in water.  The internal state machine consists of pumping water into the floater bladder on a timed interval, just until it begins to sink, then it automatically shuts off the pump and freefalls.  It registers when it has reached the bottom, sits there for an additional timed interval, and then begins pumping water out to return to the surface and automatically shuts the pump off when emptied.  Throught this profile, it is displaying different colors indicating these internal changes, as well as collecting temperature, depth, and pressure data.  
 
 It transmits all of the collected data via Bluetooth to the command station laptop, which then gets written to a csv file and plotted on the GUI automatically. 
 
-## Results
+## Setting & Related Work
 Our team was one of the few teams in the competition to collect all of the Float Task points.  It is a category in the MATE ROV Competition that is notoriously difficult due to the 15' depth and the stringent requirements at the more difficult competition level. 
 
-## Features
+## Methodology
 - Automated vertical profile
 - Embedded State Machine
 - Bluetooth control and data transmission
 - Automated data saving and plotting
 
-## Technologies Used
+## Experiments & Results
 - PyQt
 - Arduino Nano
 - Arduino Bluetooth Module
 - RTC Clock
 - Bluerobotics sensor
 
-## Languages
+## Insights
 - C++
 - Python
 
-## UML Diagram
+## Key References
 ![Image description](/assets/img/projects/floater/floater_stateMach_umlDiag_700w_533h.png){:.lead width="700" height="533"}
 
 Arduino Nano embedded State Machine.
 {:.figcaption}
 
-## GUI
+## Project Presentation
 ![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.png){:.lead width="800" height="635"}
 
 Floater GUI
 {:.figcaption}
 
 Our team name was "The Vikings"; the pixelart graphic assets for the GUI were created using generative AI.  
+
+## Project Report

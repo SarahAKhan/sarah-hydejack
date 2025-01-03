@@ -3,9 +3,9 @@ layout:      project
 title:       Knowledge Distillation for TinyML/Embedded AI
 date:        2024-12-09
 image:
-  path:       /assets/img/projects/floater/floater_3imgs_1920w.png
+  path:       /assets/img/academics/knowledgeDistill/KD_pipeline_1920w.png
   srcset:
-    1920w:   /assets/img/projects/floater/floater_3imgs_1920w.png
+    1920w:   /assets/img/academics/knowledgeDistill/KD_pipeline_1920w.png
     960w:    /assets/img/projects/floater/floater_3imgs@0,5x.png
     480w:    /assets/img/projects/floater/floater_3imgs@0,25x.png
 full_width: true

@@ -29,7 +29,7 @@ During the 2024 MATE ROV Competition, we successfully completed the Floater Task
   </iframe>
 </div>
 
-![Image description](/assets/img/projects/floater/floater_interior_700w_600h.png){:.lead width="700" height="600"}
+![Floater interior design CAD](/assets/img/projects/floater/floater_interior_700w_600h.png){:.lead width="700" height="600"}
 
 Floater interior design.
 {:.figcaption}

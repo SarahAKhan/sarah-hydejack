@@ -16,20 +16,32 @@ featured:    true
 ---
 
 ## Knowledge Distillation for TinyML/Embedded AI: Model Distillation with Time Series Data
-TinyML is an emerging field for on device machine learning.  Using knowledge distillation from a Wav2Vec2-base teacher model and two student models of varied reduced sizes, we focused on the impact of time series data in the distillation pipeline.  We finetuned Wav2Vec2-base (95M parameters) using the Speech Emotion Recognition (SER) dataset TESS to a 98.3% accuracy.  Knowledge from this teacher model was distilled to Wav2Small (90K parameters) at a 94.8% accuracy and our Wav2Tiny (15K parameters) at a 86.3% accuracy.  
+TinyML is an emerging field for on device machine learning.  Using knowledge distillation from a Wav2Vec2-base[1] teacher model and two student models of varied reduced sizes, we focused on the impact of time series data in the distillation pipeline.  We finetuned Wav2Vec2-base (95M parameters) using the Speech Emotion Recognition (SER) dataset TESS to a 98.3% accuracy.  Knowledge from this teacher model was distilled to Wav2Small (90K parameters) at a 94.8% accuracy and our Wav2Tiny (15K parameters) at a 86.3% accuracy.  
 
-![Image description](/assets/img/academics/knowledgeDistill/modelsTable_results.png){:.lead width="700" height="600"}
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/modelsTable_results.png){:.lead width="700" height="600"}
 
 SER Models
 {:.figcaption}
 
 ## Research Problem
-The device emitted unique LED color patterns to convey internal state changes as it performed the vertical profile, as it loses Bluetooth connection once submerged in water.  The internal state machine consists of pumping water into the floater bladder on a timed interval, just until it begins to sink, then it automatically shuts off the pump and freefalls.  It registers when it has reached the bottom, sits there for an additional timed interval, and then begins pumping water out to return to the surface and automatically shuts the pump off when emptied.  Throught this profile, it is displaying different colors indicating these internal changes, as well as collecting temperature, depth, and pressure data.  
+Machine Learning has enabled an unprecedented level of device intelligence in recent years and with the various model types available, that intelligence can be tailored to a variety of tasks and insights.  Our interest lay in the exploration of deploying machine learning models directly onto small scale devices themselves.  Due to the often heavy computational costs involved, we investigated TinyML techniques geared towards model scale reduction while maintaining performance accuracy with a focus on time series data.  Time series data in the context of Speech Emotion Recognition (SER) presents a unique challenge as a classification task, as it necessitates the categorization of potentially subjective classifications over continuously distributed data. 
 
-It transmits all of the collected data via Bluetooth to the command station laptop, which then gets written to a csv file and plotted on the GUI automatically. 
+## Setting & Key Related Works
+### Teacher Model: Wav2Vec2
+As mentioned, we used Wav2Vec2-base as our teacher model, a transformer model capable of a variety of tasks using raw audio data sampled at 16kHz.  The base version had been trained on a large generalized audio dataset, which we then finetuned for the SER task.  The model is capable of achieving high classification accuracy with limited avialable data, with reported results demonstrating this capacity with as little as one hour of audio data.[1]  
 
-## Setting & Related Work
-Our team was one of the few teams in the competition to collect all of the Float Task points.  It is a category in the MATE ROV Competition that is notoriously difficult due to the 15' depth and the stringent requirements at the more difficult competition level. 
+![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/TeacherModel_graphic_960w400h.png)
+
+Wav2Vec2 Teacher Model training results and hyperparameters
+{:.figcaption}
+
+### Student Model 1: Wav2Small[2]
+A key refrerence for our project was the research done by the audEERING group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
+
+### Student Model 2: Wav2Tiny
+
+### Dataset: TESS
+The TESS dataset was used to finetune the Wav2Vec2 teacher model for the SER classfication task.  It consists of seven emotion classifications: anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral and with 2800 total datapoints, was split with 2240 samples for training and 560 samples for testing.  The samples themselves are high quality audio recordings in a .wav format. 
 
 ## Methodology
 - Automated vertical profile
@@ -48,13 +60,13 @@ Our team was one of the few teams in the competition to collect all of the Float
 - C++
 - Python
 
-## Key References
+## Project Presentation
 ![Image description](/assets/img/projects/floater/floater_stateMach_umlDiag_700w_533h.png){:.lead width="700" height="533"}
 
 Arduino Nano embedded State Machine.
 {:.figcaption}
 
-## Project Presentation
+## Project Report
 ![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.png){:.lead width="800" height="635"}
 
 Floater GUI
@@ -62,4 +74,7 @@ Floater GUI
 
 Our team name was "The Vikings"; the pixelart graphic assets for the GUI were created using generative AI.  
 
-## Project Report
+## Key References
+1. A. Baevski, H. Zhou, A. Mohamed, and M. Auli, "wav2vec 2.0: A framework for self supervised learning of speech representations," in Proceedings of the 34th Conference on Neural Information Processing Systems (NeurIPS 2020), Vancouver, Canada, 2020. [1](https://arxiv.org/abs/2006.11477)
+
+2. D. Kounades-Bastian, O. Schrüfer, A. Derington, H. Wierstorf, F. Eyben, F. Burkhardt, and B. W. Schuller, "WAV2SMALL: Distilling Wav2Vec2 to 72K Parameters for Low-Resource Speech Emotion Recognition," arXiv preprint arXiv:2408.13920, 2024. [2](https://arxiv.org/abs/2408.13920)

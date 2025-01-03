@@ -36,7 +36,12 @@ Wav2Vec2 Teacher Model training results and hyperparameters
 {:.figcaption}
 
 ### Student Model 1: Wav2Small[2]
-A key refrerence for our project was the research done by the audEERING group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
+A key refrerence for our project was the research done by the [audEERING](https://www.audeering.com/) group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
+
+![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_graphic_1920w2000h.png){:.lead width="700" height="600"}
+
+Wav2Vec2 Teacher Model training results and hyperparameters
+{:.figcaption}
 
 ### Student Model 2: Wav2Tiny
 

@@ -30,7 +30,7 @@ Machine Learning has enabled an unprecedented level of device intelligence in re
 ### Teacher Model: Wav2Vec2
 As mentioned, we used Wav2Vec2-base as our teacher model, a transformer model capable of a variety of tasks using raw audio data sampled at 16kHz.  The base version had been trained on a large generalized audio dataset, which we then finetuned for the SER task.  The model is capable of achieving high classification accuracy with limited avialable data, with reported results demonstrating this capacity with as little as one hour of audio data.[1]  
 
-![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/TeacherModel_graphic_1920w1000h.png){:.lead width="700" height="600"}
+![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/TeacherModel_graphic_1920w2000h.png){:.lead width="700" height="600"}
 
 Wav2Vec2 Teacher Model training results and hyperparameters
 {:.figcaption}

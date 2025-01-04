@@ -38,7 +38,7 @@ Wav2Vec2 Teacher Model training results and hyperparameters
 ### Student Model 1: Wav2Small[2]
 A key reference for our project was the research done by the [audEERING](https://www.audeering.com/) group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
 
-![Student model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2Small_graphic_1920w2000h.png)
+![Student model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2Small_graphic_960w1000h.png)
 
 Wav2Small Student Model architecture and hyperparameters
 {:.figcaption}
@@ -58,7 +58,7 @@ The TESS dataset was used to finetune the Wav2Vec2 teacher model for the SER cla
 Since this was an introductory TinyML project, we sourced informative learning references for foundational theory, as well as broad ranging TinyML papers surveying applications[5] in order to gain a better understanding of the core principles and current status of the topics.  Hinton, et al's seminal work on knowledge distillation, "Distilling the Knowledge in a Neural Network"(2015) [[4]](http://arxiv.org/abs/1503.02531) is often cited as a core methodology establishing piece, demonstrating the effectiveness of the teacher/student learning paradigm.  As mentioned in other sections [2] also served as a main reference for our student models and their architecture design for lightweight handling of time series data.
 
 ## Methodology
-The main distillation pipeline was constructed using the finetuned teacher model and 
+The main distillation pipeline was constructed using the finetuned teacher model, a trainer class, the two interchangeable student models, and the TESS Dataset.  
 
 ## Experiments & Results
 - PyQt

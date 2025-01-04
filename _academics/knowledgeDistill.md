@@ -38,7 +38,7 @@ Wav2Vec2 Teacher Model training results and hyperparameters
 ### Student Model 1: Wav2Small[2]
 A key reference for our project was the research done by the [audEERING](https://www.audeering.com/) group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
 
-![Wav2Small Student Model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2Small_graphic_720w750h.png)
+![Wav2Small Student Model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2small_graphic_960w1000h.png)
 
 Wav2Small Student Model architecture and hyperparameters
 {:.figcaption}
@@ -69,12 +69,9 @@ The main distillation pipeline was constructed using the finetuned teacher model
 
 
 ## Project Report
-![Image description](/assets/img/projects/floater/floater_GUI_1136w_901h.png){:.lead width="800" height="635"}
 
-Floater GUI
-{:.figcaption}
 
-Our team name was "The Vikings"; the pixelart graphic assets for the GUI were created using generative AI.  
+  
 
 ## Key References
 1. A. Baevski, H. Zhou, A. Mohamed, and M. Auli, "wav2vec 2.0: A framework for self supervised learning of speech representations," in Proceedings of the 34th Conference on Neural Information Processing Systems (NeurIPS 2020), Vancouver, Canada, 2020. [1](https://arxiv.org/abs/2006.11477)

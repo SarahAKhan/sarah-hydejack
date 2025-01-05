@@ -79,26 +79,64 @@ The softened output loss calculation is done using KL Divergence times a normali
 Softened Teacher Loss
 {:.figcaption}
 
-The student model is simultaneously calculating its own Cross Entropy Loss and the final loss for learning is a combination of the teacher model's loss and the student model's loss, with each loss's contributing weight being dictated by the alpha parameter: 
+The student model is simultaneously calculating its own Cross Entropy Loss and the final loss for learning is a combination of the teacher model's loss and the student model's loss, with each loss's contributing weight being dictated by the α parameter: 
 
 ![Final student losss](/assets/img/academics/knowledgeDistill/studentModel_finalLoss_graphic_600w400h.png)
 
 Final Student Loss
 {:.figcaption}
 
-In summary there are two variables impacting the distillation process: the temperature and alpha parameters.  
+In summary there are two variables impacting the distillation process: the temperature and α parameters.  
 
 ## Experiments & Results
+With each student model, Wav2Small and Wav2Tiny, we analyzed the impact both new hyperparameters, temperature and α, have on the learning process. We conducted three experiments per temperature setting; for each temperature setting, 1.0, 2.0, and 3.0, we tested α values 0.0, 0.5, and 1.0.  
+
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/modelsTable_results.png){:.lead width="700" height="600"}
+
+Comparison of Wav2Vec2-base with Wav2Small and Wav2Tiny performance metrics with α set to 0.5 and T set to 2.0.
+{:.figcaption}
+
+The α hyperparameter was evaluated using an an ablation study: 
+
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2small_ablationTable.png){:.lead width="700" height="600"}
+
+Performance metrics for Wav2Small
+{:.figcaption}
+
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2tiny_ablationTable.png){:.lead width="700" height="600"}
+
+Performance metrics for Wav2Tiny
+{:.figcaption}
+
+Wav2Small consistently performed the best at α set to 0.5 for all three temperature values, achieving accuracies above 90%.  Wav2Tiny surprisingly performed best without the teacher model's input (α set to 1.0), achieving an accuracy of 93%.  
+
+Wav2Small experienced confusion between the categories angry, disgust, happy and pleasantly surprised:
+
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2small_confusionMatrix.png){:.lead width="700" height="600"}
+
+ Wav2Small confusion matrix (T = 2, α = 0.5)
+{:.figcaption}
+
+Wav2Tiny experienced confusion between pleasantly surprised, happy, disgust, angry, and fear the most:
+
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2tiny_confusionMatrix.png){:.lead width="700" height="600"}
+
+ Wav2Tiny confusion matrix (T = 2, α = 0.5)
+{:.figcaption}
+
+## Discussion & Insights Gained
+It bears noting that when α is 0.0, the student model is learning entirely independently of the teacher's input.  In this sense, Wav2Tiny performed better without the teacher model's input.  This may be due to the extreme size difference between the teacher model and Wav2Tiny, going from 95M parameters to 15K may have been too large of a gap.  Investigating the cause of this requires further research exploration.  
+
+Both student models experienced more confusion between emotion categories than the teacher model. Further exploration is needed on this as well, but it is important to consider the visual similarities and differences in the spectrograms as that is the source for feature extraction:
+
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/confusionCategories_spectrograms_graphic_1920w1800h.png)
+
+ Category waveforms and spectrograms
+{:.figcaption}
 
 
-## Insights
-- C++
-- Python
-
-
-## Project Report
-
-
+## Conclusion
+We were able to distinguish the impact of the teacher prediction softening and the teacher loss inclusion/exclusion to varying degrees.  Wav2Small demonstrated a postive impact from teacher guided learning with 94.82% accuracy, while Wav2Tiny requires further study as to the lack of teacher based improvement, but still demonstrated significant accuracy results of 93% at a significantly reduced model size.  I will be further extending this study to examine the impact of optimal experimental design on the learning process in the subsequent semester.
   
 
 ## Key References

@@ -18,7 +18,7 @@ featured:    true
  With a central focus of Human-Robot Interaction, this project aims to evaluate the impact of perspective domain shift in small mobile robots, using the Anki Vector and the MMPOSE/RTMO gesture recognition backbone.  We generated Vector domain specific data in order to successfully implement Unsupervised Domain Adaptation (UDA) on RTMO and created unique gesture based responses on Vector. Our results explore the broader implications of robot perception domains and means of integration with modern computer vision. 
 
 ## Context & Motivations
-Integrating the MMPose (RTMO) ML model and the Anki Vector Robot, we constructed a pose estimation pipeline for the Vector robot, having adapted the model's domain to the small mobile robot's perception using Unsupervised Domain Adaptation (UDA).  The purpose of this project was to enable gesture recognition in the Vector robot for the purposes of human gesture based non-verbal communication and interaction.  We sought to address the following challenges:
+Integrating the MMPose (RTMO) ML model and the Anki Vector Robot, we constructed a pose estimation pipeline for the Vector robot, having adapted the model's domain to the small mobile robot's perception domain using Unsupervised Domain Adaptation (UDA).  The purpose of this project was to enable gesture recognition in the Vector robot for the purposes of human gesture based non-verbal communication and interaction.  We sought to address the following challenges:
 
 - Perspective shift
 - Lack of data from Vector robot perspective
@@ -28,23 +28,24 @@ Integrating the MMPose (RTMO) ML model and the Anki Vector Robot, we constructed
 - Customizable gestures commands
 - Command registering using keypoint features
 
-![Perspective shift impact image showing correct and incorrect action recognition](/assets/img/academics/roboUDA/perspectiveShift_motivations_graphic_960w450h.png)
+![Vector robot perspective domain](/assets/img/academics/roboUDA/perspectiveShift_motivations_graphic_960w450h.png){:.lead width="960" height="450"}
 
-Impact of perspective shift on key-point based action recognizer
+Vector robot perspective domain
 {:.figcaption}
 
 ### Relevant Works
-The RTMO backbone leveraging the MMPOSE toolkit served as a fundamental starting point for this project [2-3].  RTMO builds on the RTMPose architecture and is state of the art in terms of general body poses.  We referenced [4] and [1] to develop a deeper understanding of the domain shifts and [5] in terms of developing domain specific gesture data. 
+The RTMO backbone leveraging the MMPOSE toolkit served as a fundamental starting point for this project [2-3].  RTMO builds on the RTMPose architecture and is state of the art in terms of general body pose recognition.  We referenced [4] and [1] to develop a deeper understanding of the domain shifts and [5] in terms of developing domain specific gesture data. 
 
 ## Methodology
-We devised a collection of 7 gesture classifications, which we then recorded using the Vector robot.  Since the Anki is no longer in operation, we relied on user created tools such as the Vector [Wirepod](https://github.com/kercre123/wire-pod) and the unofficial [Python SDK](https://github.com/anki/vector-python-sdk) to gain access to Vector's features and controls.  I automated temporal data collection using custom image capturing at 8 fps. 
+We devised a collection of 7 gesture classifications, which we then recorded using the Vector robot.  Since Anki is no longer in operation, we relied on user created tools such as the Vector [Wirepod](https://github.com/kercre123/wire-pod) for establishing wireless communication with Vector and the unofficial [Python SDK](https://github.com/anki/vector-python-sdk) to gain access to Vector's features and controls.  I automated temporal data collection on Vector using custom image capturing at 8 fps. 
 
-![Vector gesture data generation implementation results](/assets/img/academics/roboUDA/vectorGestureCaptureImages_graphic_1080w506h.png)
+![Vector gesture data generation implementation results](/assets/img/academics/roboUDA/vectorGestureCaptureImages_graphic_1080w506h.png){:.lead width="1080" height="506"}
 
 Vector perspective domain data generation
 {:.figcaption}
 
-We recorded the following gestures for the UDA implementation:
+### Gesture Class with Vector Responses
+We recorded the following gesture data classifications for the UDA implementation:
 
 - Both Hands Raised
 - Squat
@@ -54,7 +55,17 @@ We recorded the following gestures for the UDA implementation:
 - Legs in Superhero Pose (A-Frame)
 - Wave Single Hand (Goodbye)
 
-### Gesture Class with Vector Responses
+With the RTMO model adapted to our gesture classifications, I then developed custom responses on Vector using the [Vector Python SDK](https://github.com/anki/vector-python-sdk).  Vector would exhibit a unique combination of physical movements, utterances, and graphic display on his screen for each classification.
+
+![Vector gesture responses with gesture diagrams](/assets/img/academics/roboUDA/gestureDiagram_graphic_960w450h.png){:.lead width="960" height="450"}
+
+Vector gesture responses with gesture diagrams
+{:.figcaption}
+
+![Vector responses and display screen graphic projections to classifications](/assets/img/academics/roboUDA/gestureClassifications_faceGraphic_900w450h.png){:.lead width="900" height="450"}
+
+Vector behavioral responses and display screen graphic projections to gesture classifications
+{:.figcaption}
 
 ### RTMO Backbone
 

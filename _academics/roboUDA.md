@@ -68,12 +68,25 @@ Vector behavioral responses and display screen graphic projections to gesture cl
 {:.figcaption}
 
 ### RTMO Backbone + Perspective Aware Classification
-The [RTMO](https://mmpose.readthedocs.io/en/latest/model_zoo_papers/algorithms.html#rtmo) model that served as our backbone came pretrained on generalized gesture data using keypoint features and had extensive recognition capabilities.  It is capable of gesture recognition in crowds and partial image gesture recognition. An adversarial domain discriminator was incorporated with the classifier to impelement the UDA.  
+The [RTMO](https://mmpose.readthedocs.io/en/latest/model_zoo_papers/algorithms.html#rtmo) model that served as our backbone came pretrained on generalized gesture data using keypoint features and had extensive recognition capabilities.  It is capable of gesture recognition in crowds and occluded image gesture recognition. An adversarial domain discriminator was incorporated with the classifier to impelement the UDA.  
 
 ## Results
-We saw significant improvement with Vector's perspective domain gesture recognition with the UDA impelementation.  
+We saw significant improvement with Vector's perspective domain gesture recognition from the UDA impelementation.  Using a mix of Vector captured data and fixed laptop camera data, we achieved a 99.3% accuracy.
+
+![Confusion matrix for mixed robot and laptop webcam generated dataset](/assets/img/academics/roboUDA/mixedData_confMatrix_graphic_960w940h.png){:.lead width="960" height="940"}
+
+Confusion matrix for mixed dataset
+{:.figcaption}
+
+With just Vector generated data, we achieved a precision of 0.862 and F1 score of 0.851.
+
+![Confusion matrix for robot generated dataset with and without UDA](/assets/img/academics/roboUDA/confMatrix_graphic_1920w940h.png){:.lead width="1920" height="940"}
+
+Comparison of confusion matrices  for action classification on robot perspective dataset
+{:.figcaption}
 
 ## Limitations & Conclusions
+An area that has yet to be explored in this project is extending the dataset to multiple users in order to broaden the generalizability of the model.  With the dataset's limited size, recognition capabilities in various environments has yet to be tested.  While the RTMO model has been trained for gesture recognition inclusive of occluded figures, the new classifications have yet to be validated with occlusions as well.  Even so within the scope of this project, we successfully achieved model domain adaptation to the Vector robot domain perspective. 
 
 ## Key References
 1.  D. Kim, K. Wang, K. Saenko, M. Betke, and S. Sclaroff, “A unified framework for domain adaptive pose estimation,” arXiv preprint arXiv:2204.00172, 2022. [1](https://arxiv.org/abs/2204.00172)

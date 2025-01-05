@@ -46,7 +46,7 @@ Wav2Small Student Model architecture and hyperparameters
 ### Student Model 2: Wav2Tiny
 Leveraging the insights provided in [2] on the advantages of the vgg7 approach to audio feature extraction combined with the simplified classification task, we further experimented with our own variation of a reduced model size, which we dubbed Wav2Tiny. This second student model resulted in around 15K parameters.
 
-![Wav2Tiny Student Model architecture](/assets/img/academics/knowledgeDistill/StudentModel_wav2tiny_graphic_1440w1500h.png)
+![Wav2Tiny Student Model architecture](/assets/img/academics/knowledgeDistill/StudentModel_wav2tiny_graphic_1440w1500h.png){:.lead width="1440" height="1500"}
 
 Wav2Tiny Student Model architecture
 {:.figcaption}
@@ -60,28 +60,28 @@ Since this was an introductory TinyML project, we sourced informative learning r
 ## Methodology
 The main distillation pipeline was constructed using the finetuned teacher model, a trainer class, the two interchangeable student models, and the TESS Dataset.  
 
-![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/KD_pipeline_1920w.png)
+![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/KD_pipeline_1920w.png){:.lead width="1920" height="1080"}
 
 Knowledge Distillation Pipeline
 {:.figcaption}
 
 The predictions of the teacher model are softened using a temperature parameter (T), which adjusts the logits to better capture the subtle relationships between class prediction output. 
 
-![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/softeningFunction_graphic_600w400h.png)
+![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/softeningFunction_graphic_600w400h.png){:.lead width="600" height="400"}
 
 Teacher Model prediction softening
 {:.figcaption}
 
 The softened output loss calculation is done using KL Divergence times a normalizing square of the Temperature parameter:
 
-![Temperature parameter normalization combined with KL Divergence](/assets/img/academics/knowledgeDistill/teacherKLD_graphic_600w400h.png)
+![Temperature parameter normalization combined with KL Divergence](/assets/img/academics/knowledgeDistill/teacherKLD_graphic_600w400h.png){:.lead width="600" height="400"}
 
 Softened Teacher Loss
 {:.figcaption}
 
 The student model is simultaneously calculating its own Cross Entropy Loss and the final loss for learning is a combination of the teacher model's loss and the student model's loss, with each loss's contributing weight being dictated by the α parameter: 
 
-![Final student losss](/assets/img/academics/knowledgeDistill/studentModel_finalLoss_graphic_600w400h.png)
+![Final student losss](/assets/img/academics/knowledgeDistill/studentModel_finalLoss_graphic_600w400h.png){:.lead width="600" height="400"}
 
 Final Student Loss
 {:.figcaption}
@@ -91,19 +91,19 @@ In summary there are two variables impacting the distillation process: the tempe
 ## Experiments & Results
 With each student model, Wav2Small and Wav2Tiny, we analyzed the impact both new hyperparameters, temperature and α, have on the learning process. We conducted three experiments per temperature setting; for each temperature setting, 1.0, 2.0, and 3.0, we tested α values 0.0, 0.5, and 1.0.  
 
-![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/modelsTable_results.png){:.lead width="700" height="600"}
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/modelsTable_results.png){:.lead width="800" height="116"}
 
 Comparison of Wav2Vec2-base with Wav2Small and Wav2Tiny performance metrics with α set to 0.5 and T set to 2.0.
 {:.figcaption}
 
 The α hyperparameter was evaluated using an an ablation study: 
 
-![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2small_ablationTable.png){:.lead width="700" height="600"}
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2small_ablationTable.png){:.lead width="931" height="333"}
 
 Performance metrics for Wav2Small
 {:.figcaption}
 
-![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2tiny_ablationTable.png){:.lead width="700" height="600"}
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2tiny_ablationTable.png){:.lead width="931" height="334"}
 
 Performance metrics for Wav2Tiny
 {:.figcaption}
@@ -112,14 +112,14 @@ Wav2Small consistently performed the best at α set to 0.5 for all three tempera
 
 Wav2Small experienced confusion between the categories angry, disgust, happy and pleasantly surprised:
 
-![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2small_confusionMatrix.png){:.lead width="700" height="600"}
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2small_confusionMatrix.png){:.lead width="537" height="475"}
 
  Wav2Small confusion matrix (T = 2, α = 0.5)
 {:.figcaption}
 
 Wav2Tiny experienced confusion between pleasantly surprised, happy, disgust, angry, and fear the most:
 
-![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2tiny_confusionMatrix.png){:.lead width="700" height="600"}
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/wav2tiny_confusionMatrix.png){:.lead width="538" height="477"}
 
  Wav2Tiny confusion matrix (T = 2, α = 0.5)
 {:.figcaption}
@@ -129,7 +129,7 @@ It bears noting that when α is 0.0, the student model is learning entirely inde
 
 Both student models experienced more confusion between emotion categories than the teacher model. Further exploration is needed on this as well, but it is important to consider the visual similarities and differences in the spectrograms as that is the source for feature extraction:
 
-![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/confusionCategories_spectrograms_graphic_1920w1800h.png)
+![KD models metrics and parameters](/assets/img/academics/knowledgeDistill/confusionCategories_spectrograms_graphic_1920w1800h.png){:.lead width="1920" height="1800"}
 
  Category waveforms and spectrograms
 {:.figcaption}

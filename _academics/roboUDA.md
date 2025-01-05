@@ -1,7 +1,7 @@
 ---
 layout:      project
-title:       Knowledge Distillation for TinyML/Embedded AI
-date:        2024-12-09
+title:       UDA for Personalized Action Recognition in Body Gesture Control for Mobile Robotics
+date:        2024-12-08
 image:
   path:       /assets/img/academics/roboUDA/udaCoverGraphic_1920w.png
   srcset:

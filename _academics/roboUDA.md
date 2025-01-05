@@ -62,7 +62,7 @@ With the RTMO model adapted to our gesture classifications, I then developed cus
 Vector gesture responses with gesture diagrams
 {:.figcaption}
 
-![Vector responses and display screen graphic projections to classifications](/assets/img/academics/roboUDA/gestureClassifications_faceGraphic_1000w650h.png){:.lead width="900" height="450"}
+![Vector responses and display screen graphic projections to classifications](/assets/img/academics/roboUDA/gestureClassifications_faceGraphic_1000w650h.png){:.lead width="1000" height="650"}
 
 Vector behavioral responses and display screen graphic projections to gesture classifications
 {:.figcaption}
@@ -71,6 +71,7 @@ Vector behavioral responses and display screen graphic projections to gesture cl
 The [RTMO](https://mmpose.readthedocs.io/en/latest/model_zoo_papers/algorithms.html#rtmo) model that served as our backbone came pretrained on generalized gesture data using keypoint features and had extensive recognition capabilities.  It is capable of gesture recognition in crowds and partial image gesture recognition. An adversarial domain discriminator was incorporated with the classifier to impelement the UDA.  
 
 ## Results
+
 
 ## Limitations & Conclusions
 

@@ -309,6 +309,10 @@ collections:
     permalink:        /academics/:path/
     output:            true
 
+  volunteer:
+    permalink:        /volunteer/:path/
+    output:            true
+
 
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------

@@ -9,7 +9,7 @@ image:
     960w:    /assets/img/academics/knowledgeDistill/KD_pipeline_960w.png
     480w:    /assets/img/academics/knowledgeDistill/KD_pipeline_480w.png
 full_width: true
-caption:     Model distillation research project using Wav2Vec2-base and time series data.
+caption:     Knowledge distillation research project using Wav2Vec2-base and time series data.
 description: >
   We sought to analyze the impact of time series data in the model distillation pipeline.  Using Wav2Vec2-base as the teacher model (95M parameters) and the TESS dataset, we distilled learning to two student models, Wav2Small (90K parameters) and our Wav2Tiny (15K parameters).
 featured:    true

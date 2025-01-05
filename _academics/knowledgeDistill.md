@@ -41,7 +41,7 @@ A key reference for our project was the research done by the [audEERING](https:/
 ![Wav2Small Student Model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2small_graphic_960w1000h.png)
 
 Wav2Small Student Model architecture and hyperparameters
-{:.figcaption}
+{:.figcaption}{:.lead width="700" height="600"}
 
 ### Student Model 2: Wav2Tiny
 Leveraging the insights provided in [2] on the advantages of the vgg7 approach to audio feature extraction combined with the simplified classification task, we further experimented with our own variation of a reduced model size, which we dubbed Wav2Tiny. This second student model resulted in around 15K parameters.

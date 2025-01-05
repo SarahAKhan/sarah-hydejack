@@ -38,10 +38,10 @@ Wav2Vec2 Teacher Model training results and hyperparameters
 ### Student Model 1: Wav2Small[2]
 A key reference for our project was the research done by the [audEERING](https://www.audeering.com/) group on knowledge distillation and their development of the Wav2Small model architecture, which consists of a VGG7-based convolutional encoder with input normalization, LogMel filter bank generation, pooling layers, and a global mean pooling layer.  We adapted this model with a linear classification head.  The spectrogram layer converts the raw audio into a time-frequency represenatation by applying the Short-Time Fourier Transfomr (STFT), which is then converted into a log-mel spectrogram.  The log-mel spectrogram is then passed through the vgg7 block for feature extraction.
 
-![Wav2Small Student Model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2small_graphic_960w1000h.png)
+![Wav2Small Student Model training results and parameters](/assets/img/academics/knowledgeDistill/StudentModel_wav2small_graphic_960w1000h.png){:.lead width="700" height="600"}
 
 Wav2Small Student Model architecture and hyperparameters
-{:.figcaption}{:.lead width="700" height="600"}
+{:.figcaption}
 
 ### Student Model 2: Wav2Tiny
 Leveraging the insights provided in [2] on the advantages of the vgg7 approach to audio feature extraction combined with the simplified classification task, we further experimented with our own variation of a reduced model size, which we dubbed Wav2Tiny. This second student model resulted in around 15K parameters.

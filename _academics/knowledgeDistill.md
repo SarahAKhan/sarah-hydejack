@@ -60,6 +60,34 @@ Since this was an introductory TinyML project, we sourced informative learning r
 ## Methodology
 The main distillation pipeline was constructed using the finetuned teacher model, a trainer class, the two interchangeable student models, and the TESS Dataset.  
 
+![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/KD_pipeline_1920w.png)
+
+Knowledge Distillation Pipeline
+{:.figcaption}
+
+The predictions of the teacher model are softened using a temperature parameter (T), which adjusts the logits to better capture the subtle relationships between class prediction output. 
+
+![Teacher model training results and parameters](/assets/img/academics/knowledgeDistill/softeningFunction_graphic_600w400h.png)
+
+Teacher Model prediction softening
+{:.figcaption}
+
+The softened output loss calculation is done using KL Divergence times a normalizing square of the Temperature parameter:
+
+![Temperature parameter normalization combined with KL Divergence](/assets/img/academics/knowledgeDistill/teacherKLD_graphic_600w400h.png)
+
+Softened Teacher Loss
+{:.figcaption}
+
+The student model is simultaneously calculating its own Cross Entropy Loss and the final loss for learning is a combination of the teacher model's loss and the student model's loss, with each loss's contributing weight being dictated by the alpha parameter: 
+
+![Final student losss](/assets/img/academics/knowledgeDistill/studentModel_finalLoss_graphic_600w400h.png)
+
+Final Student Loss
+{:.figcaption}
+
+In summary there are two variables impacting the distillation process: the temperature and alpha parameters.  
+
 ## Experiments & Results
 
 

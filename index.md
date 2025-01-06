@@ -7,8 +7,7 @@ selected_projects:
     - _academics/roboUDA.md
 projects_page: academics.md
 selected_projects:
-    -_projects/floater.md
-    -_projects/ffbpnn.md
+    - _projects/floater.md
 projects_page: projects.md
 featured: false
 

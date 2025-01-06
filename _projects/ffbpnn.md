@@ -35,3 +35,16 @@ The network was tested using the well known Iris dataset and the Sine dataset.
 
 ### Iris Dataset
 The network was trained twice using the Iris dataset; for 10001 epochs at a learning rate of 0.7 and for 20001 epochs at a learning rate of 0.3.
+
+![Iris dataset training results](/assets/img/projects/ffbpnn/ffbpnn_irisDataset_results_960w900h.png){:.lead width="960" height="900"}
+
+Iris dataset training results
+{:.figcaption}
+
+### Sine Dataset
+The Sine dataset was used to evaluate the impact of network of varying sizes; evaluating across layers and nodes per layer.  
+
+![Sine dataset experiment results](/assets/img/projects/ffbpnn/ffbpnn_sineDataset_results_960w1200h.png){:.lead width="960" height="1200"}
+
+Sine dataset network size experiment results
+{:.figcaption}

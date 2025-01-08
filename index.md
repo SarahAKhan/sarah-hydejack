@@ -6,6 +6,7 @@ academic_projects:
     - _academics/knowledgeDistill.md
     - _academics/roboUDA.md
 projects_page: academics.md
+featured: false
 selected_projects:
     - _projects/floater.md
     - _projects/ffbpnn.md

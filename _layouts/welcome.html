@@ -130,9 +130,9 @@ layout: about
 
 {% if content contains "<!--projects_academics-->" %}
 {% capture projects_x %}
-{% if page.selected_projects %}
+{% if page.academic_projects %}
   <div class="columns mt2 {% unless no_third_column %}columns-break{% endunless %}">
-    {% for project_path in page.selected_projects %}
+    {% for project_path in page.academic_projects %}
       {% if major >= 4 and minor >= 1 %}
        {% assign project = site.documents | find_exp:"project", "project_path == project.path or project_path == project.url" %}
       {% else %}

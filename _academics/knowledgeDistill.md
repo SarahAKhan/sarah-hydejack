@@ -125,7 +125,7 @@ Wav2Tiny experienced confusion between pleasantly surprised, happy, disgust, ang
 {:.figcaption}
 
 ## Discussion & Insights Gained
-It bears noting that when α is 0.0, the student model is learning entirely independently of the teacher's input.  In this sense, Wav2Tiny performed better without the teacher model's input.  This may be due to the extreme size difference between the teacher model and Wav2Tiny, going from 95M parameters to 15K may have been too large of a gap.  Investigating the cause of this requires further research exploration.  
+It bears noting that when α is 1.0, the student model is learning entirely independently of the teacher's input.  In this sense, Wav2Tiny performed better without the teacher model's input.  This may be due to the extreme size difference between the teacher model and Wav2Tiny, going from 95M parameters to 15K may have been too large of a gap.  Investigating the cause of this requires further research exploration.  
 
 Both student models experienced more confusion between emotion categories than the teacher model. Further exploration is needed on this as well, but it is important to consider the visual similarities and differences in the spectrograms as that is the source for feature extraction:
 
@@ -136,7 +136,7 @@ Both student models experienced more confusion between emotion categories than t
 
 
 ## Conclusion
-We were able to distinguish the impact of the teacher prediction softening and the teacher loss inclusion/exclusion to varying degrees.  Wav2Small demonstrated a postive impact from teacher guided learning with 94.82% accuracy, while Wav2Tiny requires further study as to the lack of teacher based improvement, but still demonstrated significant accuracy results of 93% at a significantly reduced model size.  I will be further extending this study to examine the impact of optimal experimental design on the learning process in the subsequent semester.
+We were able to distinguish the impact of the teacher prediction softening and the teacher loss inclusion/exclusion to varying degrees.  Wav2Small demonstrated a postive impact from teacher guided learning with 94.82% accuracy, while Wav2Tiny requires further study as to the lack of teacher based improvement, but still demonstrated accuracy results of 93% at a significantly reduced model size.  I will be further extending this study to examine the impact of optimal experimental design on the learning process in the subsequent semester.
   
 
 ## Key References

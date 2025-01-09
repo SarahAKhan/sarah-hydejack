@@ -92,9 +92,9 @@ layout: about
       </div>
     {% endfor %}
   </div>
-{% elsif site.projects.size > 1 %}
+{% elsif site.academics.size > 1 %}
   <div class="columns mt2 {% unless no_third_column %}columns-break{% endunless %}">
-    {% assign ordered_projects = site.projects | sort:"date" | reverse %}
+    {% assign ordered_projects = site.academics | sort:"date" | reverse %}
     {% for project in ordered_projects limit:2 %}
       {% assign featured = page.featured | default:project.featured | default:page.big_project | default:project.big_project %}
       <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">

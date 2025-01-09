@@ -104,7 +104,7 @@ layout: about
   </div>
 {% endif %}
 
-{% assign academic_projects_page = page.projects_page | default:page.more_academic_projects %}
+{% assign academic_projects_page = page.academic_projects_page | default:page.more_academic_projects %}
 {% if academic_projects_page %}
   {% if major >= 4 and minor >= 1 %}
     {% assign more_academic_projects = nodes | find_exp:"page", "academic_projects_page == page.path or academic_projects_page == page.url" %}

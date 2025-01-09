@@ -2,10 +2,10 @@
 layout: welcome
 title:  Welcome
 cover:  true
-academic_projects:
+selected_academic_projects:
     - _academics/knowledgeDistill.md
     - _academics/roboUDA.md
-projects_page_academics: academics.md
+academic_projects_page: academics.md
 featured: false
 selected_projects:
     - _projects/floater.md

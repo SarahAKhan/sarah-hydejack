@@ -2,16 +2,17 @@
 layout: welcome
 title:  Welcome
 cover:  true
+featured: false
 selected_academic_projects:
     - _academics/knowledgeDistill.md
     - _academics/roboUDA.md
 academic_projects_page: academics.md
-featured: false
+#featured: false
 selected_projects:
     - _projects/floater.md
     - _projects/ffbpnn.md
 projects_page: projects.md
-featured: false
+#featured: false
 
 ---
 

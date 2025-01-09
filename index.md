@@ -5,7 +5,7 @@ cover:  true
 academic_projects:
     - _academics/knowledgeDistill.md
     - _academics/roboUDA.md
-projects_page: academics.md
+projects_page_academics: academics.md
 featured: false
 selected_projects:
     - _projects/floater.md

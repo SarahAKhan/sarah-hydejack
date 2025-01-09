@@ -162,23 +162,23 @@ layout: about
   </div>
 {% endif %}
 
-{% assign projects_page = page.projects_page | default:page.more_projects %}
-{% if projects_page %}
+{% assign academic_projects_page = page.projects_page | default:page.more_academic_projects %}
+{% if academic_projects_page %}
   {% if major >= 4 and minor >= 1 %}
-    {% assign more_projects = nodes | find_exp:"page", "projects_page == page.path or projects_page == page.url" %}
+    {% assign more_academic_projects = nodes | find_exp:"page", "academic_projects_page == page.path or academic_projects_page == page.url" %}
   {% else %}
-                              {% assign more_projects = nodes | where_exp:"page", "projects_page == page.path" | first %}
-    {% unless more_projects %}{% assign more_projects = nodes | where_exp:"page", "projects_page == page.url"  | first %}{% endunless %}
+                              {% assign more_academic_projects = nodes | where_exp:"page", "academic_projects_page == page.path" | first %}
+    {% unless more_academic_projects %}{% assign more_academic_projects = nodes | where_exp:"page", "academic_projects_page == page.url"  | first %}{% endunless %}
   {% endif %}
   
-  {% if more_projects %}
-    {% capture projects_title %}<a class="heading flip-title" href="{{ more_projects.url | relative_url }}">{{ more_projects.title }}</a>{% endcapture %}
-    {% assign text = strings.welcome.more_projects | default:"See <!--projects_title--> for more" %}
+  {% if more_academic_projects %}
+    {% capture academic_projects_title %}<a class="heading flip-title" href="{{ more_academic_projects.url | relative_url }}">{{ more_academic_projects.title }}</a>{% endcapture %}
+    {% assign text = strings.welcome.more_academic_projects | default:"See <!--academic_projects_title--> for more" %}
     <p class="read-more mt1">
-      {{ text | replace:"<!--projects_title-->", projects_title }}
+      {{ text | replace:"<!--academic_projects_title-->", academic_projects_title }}
     </p>
   {% else %}
-    Page with path <code>{{ projects_page }}</code> not found.
+    Page with path <code>{{ academic_projects_page }}</code> not found.
   {% endif  %}
 {% endif %}
 {% endcapture %}

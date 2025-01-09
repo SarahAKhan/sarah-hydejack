@@ -82,7 +82,7 @@ layout: about
         {% unless project %}{% assign project = site.documents | where_exp:"project", "project_path == project.url"  | first %}{% endunless %}
       {% endif %}
 
-      {% assign featured = page.featured | default:project.featured | default:page.big_project | default:project.big_project %}
+      {% assign featured = false %} 
       <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
         {% if project %}
           {% include_cached pro/project-card.html project=project featured=featured %}

@@ -1,7 +1,7 @@
 ---
 layout:      project
-title:       Presenter at Learning Lab's INSPIRE Convening 2024 Conference
-date:        202-10-15
+title:       Co-Presenter at Learning Lab's INSPIRE Convening 2024 Conference
+date:        2020-10-15
 image:
   path:       /assets/img/academics/cip_inspire_presentation/LL_CiP_Presentation_p1_1920w.png
   srcset:
@@ -15,12 +15,12 @@ description: >
 featured:    true
 ---
 
-## Presented on Code in Place integration into Foothill College's CS49 Course at Learning Lab's INSPIRE Convening 2024 Conference
+## Co-Presenter at Learning Lab's INSPIRE Convening 2024 Conference
 
 ## Project Overview
 Foothill College and Stanford Digital Education were invited to present on their Code in Place integration at the INSPIRE Convene 2024 Conference, organized by Learning Lab.  The conference hosts multiple California higher education institutions and serves as an educational think tank on academic innovation and challanges.  
 
-![Conference graphic](/assets/img/academics/cip_inspire_presentation/INSPIRE-banner_1366w768h.png){:.lead width="1366" height="768"}
+![Conference graphic](/assets/img/academics/cip_inspire_presentation/INSPIRE-banner_1366w768h.jpg){:.lead width="1366" height="768"}
 
 Learning Lab INSPIRE 2024 
 {:.figcaption}
@@ -36,7 +36,7 @@ Conference presentation learning track segment
 
 <iframe src="/assets/img/academics/cip_inspire_presentation/Learning _Lab_CiP_Presentation_Slide_Deck.pdf" width="100%" height="600px" style="border: none;"></iframe>
 
-Download presentation: [Download Presentation (PDF)](/assets/img/academics/cip_inspire_presentation/Learning _Lab_CiP_Presentation_Slide_Deck.pdf)
+Download presentation: [Scaling Success // Code in Place Presentation Slide Deck (PDF)](/assets/img/academics/cip_inspire_presentation/Learning _Lab_CiP_Presentation_Slide_Deck.pdf)
 
 We presented on the Code in Place platform and educational ethos, which is to enable and support students from varied backgrounds to enter into the Computer Science field.  Highlighting the flexible open source Code in Place platform, we demonstrated how the established course was adapted to Foothill College's CS49 curriculum requirements, resulting in a transferrable, credit granting course with an extensive web based learning environment.  
 

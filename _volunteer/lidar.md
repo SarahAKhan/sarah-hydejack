@@ -15,6 +15,8 @@ description: >
 featured:    true
 ---
 
+## Research Volunteer at LIDAR (Laboratory for Intelligent Decision and Autonomous Robots)
+
 ## Collaboration
 My team members and I have leveraged currently ongoing efforts provided by a researcher working with the IsaacLab team.  We then tested the integration using the training script provided to verify the successful implementation of TorchRL within IsaacLab.
 

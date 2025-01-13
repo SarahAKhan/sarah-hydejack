@@ -50,7 +50,7 @@ Download presentation: [Example Code in Place Section Lecture Slides (PDF)](/ass
 
 Code in Place serves as a gateway into the Computer Science field for many non-traditional students.  Being a non-traditional student myself, I gratefully accepted the opportunity to support others in similar circumstances in their efforts to gain increasingly critical programming skills.  It provides me with the chance to put the knowledge I've gained in my own career shifting journey to good use.  As a Section Leader, I function as an educator and a mentor, and thrive on watching students realize their own tenacity and potential in crafting their own tech inspired futures. 
  
-## Education Involvement & Skills
+## Educational Involvement & Skills
 
 Having completed two quarters as a Section Leader, I have contributed a sizeable library of presentation materials to the Code in Place instructional library.  Section Leaders are provided with ample resources for conducting each Section, and so to further contribute to this extensive effort, I developed additional section materials derived from those resources.  
 

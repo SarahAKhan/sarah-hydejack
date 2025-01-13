@@ -1,7 +1,7 @@
 ---
 layout:      project
 title:       Research Volunteer at LIDAR (Laboratory for Intelligent Decision and Autonomous Robots)
-date:        2024-12-09
+date:        2025-01-13
 image:
   path:       /assets/img/volunteer/LIDAR/LIDAR_digit_1920w.png
   srcset:

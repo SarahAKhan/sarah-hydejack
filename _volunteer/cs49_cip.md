@@ -41,7 +41,7 @@ Code in Place students begin their programming journey in Python and cover the f
  - Animation
  - Data Structures
 
- <iframe src="/assets/img/volunteer/cip_inspire_presentation/CiP_PythonControl_slideDeck.pdf" width="100%" height="600px" style="border: none;"></iframe>
+ <iframe src="/assets/img/volunteer/CiP/CiP_PythonControl_slideDeck.pdf" width="100%" height="600px" style="border: none;"></iframe>
 
 Download presentation: [Example Code in Place Section Lecture Slides (PDF)](/assets/img/volunteer/CiP/CiP_PythonControl_slideDeck.pdf)
 

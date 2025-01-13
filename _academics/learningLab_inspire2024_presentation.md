@@ -1,7 +1,7 @@
 ---
 layout:      project
 title:       Co-Presenter at Learning Lab's INSPIRE Convening 2024 Conference
-date:        2020-10-15
+date:        2024-10-15
 image:
   path:       /assets/img/academics/cip_inspire_presentation/LL_CiP_Presentation_p1_1920w.png
   srcset:

@@ -18,7 +18,7 @@ featured:    true
 ## Volunteer Merch Product Developer for Manjeet Sarkar
 
 ## Overview
-Manjeet Sarkar is a rising standup comedian in the Indian standup community, who is well known for his social commentary on discrimination against marginalized groups in South Asian communities.  I was inspired by his outspoken and acute delivery on these topics, and so while enrolled as a fulltime Computer Science student, I wanted to contribute to his efforts by leveraging the years of design experience I had accumulated thus far.  This opportunity allowed me to design in a capacity that aligned more with my values and general outlook.  I designed graphics for his upcoming tour to be used on merchandise to raise funds for expanding said tour.
+Manjeet Sarkar is a rising standup comedian in the Indian standup community, well known for his social commentary on discrimination against marginalized groups in South Asian communities.  I was inspired by his outspoken and acute delivery on these topics, and so while enrolled as a fulltime Computer Science student, I contributed to his efforts by leveraging the years of design experience I had accumulated thus far.  This opportunity allowed me to design in a capacity that aligned more with my values and general outlook.  I designed graphics for his upcoming tour to be used on merchandise to raise funds for expanding said tour.
 
 ![Manjeet Sarkar Untouchables tour key graphic](/assets/img/volunteer/manjeet/Manjeet_merchGraphic_Front_821w1410h.jpg){:.lead width="821" height="1410"}
 
@@ -31,5 +31,5 @@ Manjeet Sarkar Untouchables tour locations graphic
 {:.figcaption}
 
 ## Skills & Impact
-In this work, I built the product development process from the ground up, inclusive of sourcing manufacturing resources.  This involvement enabled a revenue stream that could further expand Manjeet Sarkar's reach and message.  It allowed me to apply my past experience in a capacity that broadens it towards product lifecycle development.  
+I built the product development process from the ground up, inclusive of sourcing manufacturing resources.  This involvement enabled a revenue stream that could further expand Manjeet Sarkar's reach and message.  It allowed me to apply my past experience in a capacity that broadens it towards product lifecycle development.  
 

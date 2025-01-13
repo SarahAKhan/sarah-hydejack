@@ -1,7 +1,7 @@
 ---
 layout:      project
 title:       Foothill CS49/Code in Place Section Leader
-date:        2025-1-12
+date:        2025-01-12
 image:
   path:       /assets/img/volunteer/CiP/CiP_Project_mainImage_1920w.png
   srcset:
@@ -15,7 +15,7 @@ description: >
 featured:    true
 ---
 
-## Section Lead for Foothill CS49/Code in Place Introductory CS Course
+## Foothill CS49/Code in Place Section Leader
 
 ## Program Overview
 From Spring 2024 Foothill College and Stanford Digital Education have been collaborating on integrating Stanford's online learning platform and course, Code in Place, into Foothill College's curriculum.  This effort has resulted in the current iteration of Foothill College's CS49, a remote transferrable credit granting introductory computer science course. 
@@ -43,13 +43,13 @@ Code in Place students begin their programming journey in Python and cover the f
 
  <iframe src="/assets/img/volunteer/cip_inspire_presentation/CiP_PythonControl_slideDeck.pdf" width="100%" height="600px" style="border: none;"></iframe>
 
-Download presentation: [Download Presentation (PDF)](/assets/img/volunteer/cip_inspire_presentation/CiP_PythonControl_slideDeck.pdf)
+Download presentation: [Example Code in Place Section Lecture Slides (PDF)](/assets/img/volunteer/CiP/CiP_PythonControl_slideDeck.pdf)
 
  ## Community Impact
- Code in Place serves as a gateway into the Computer Science field for many non-traditional students.  Being a non-traditional student myself, I gratefully accepted the opportunity to support others in similar circumstances, in their efforts to gain increasingly critical programming skills.  It provides me with the chance to put the knowledge I've gained in my own career shifting journey to good use.  As a Section Leader, I function as an educator and a mentor, and thrive on watching students realize their own tenacity and potential in crafting their own tech inspired futures. 
+ Code in Place serves as a gateway into the Computer Science field for many non-traditional students.  Being a non-traditional student myself, I gratefully accepted the opportunity to support others in similar circumstances in their efforts to gain increasingly critical programming skills.  It provides me with the chance to put the knowledge I've gained in my own career shifting journey to good use.  As a Section Leader, I function as an educator and a mentor, and thrive on watching students realize their own tenacity and potential in crafting their own tech inspired futures. 
  
  ## Education Involvement & Skills
- Having completed two quarters as a Section Leader, I have contributed a sizeable library of presentation materials on these topics to the Code in Place education library.  Section Leaders are provided with ample resources for each Section, and so to further contribute to this extensive effort, I created presentation materials derived from those resources for use in conducting Sections.  
+ Having completed two quarters as a Section Leader, I have contributed a sizeable library of presentation materials to the Code in Place instructional library.  Section Leaders are provided with ample resources for conducting each Section, and so to further contribute to this extensive effort, I developed additional section materials derived from those resources.  
 
- This role has enabled me to grow my own instructional skills in a profound way.  I regularly request student feedback on how I can bring more value to our Section meetings, and so in this and many ways, I learn as much from the students as they do from me.  
+ This role has enabled me to grow my own instructional skills in a profound way.  I regularly request student feedback on how I can bring more value to our Section meetings, and learn as much from the students as they do from me.  
 
